@@ -34,6 +34,16 @@ RSpec.describe "Prime Number Calculation", type: :request do
         expect(response[:is_prime]).to eq(true)
       end
 
+      it "with invalid calculation_type returns 200 success and invalid calculation_type rror" do
+        start_value = rand(0..9000)
+        end_value = rand(0..9000)
+        calculation_type = "foo-BAR"
+        post "http://localhost:3000/" + @endpoint, params: { start_value: start_value, end_value: end_value, calculation_type: calculation_type }
+        expect(response).to have_http_status(200)
+
+        expect(response[:is_prime]).to eq(true)
+      end
+
       it "with inverse ranges returns 200 success and solution with correct warning" do
         start_value = 500
         end_value = 250
@@ -67,14 +77,14 @@ RSpec.describe "Prime Number Calculation", type: :request do
         expect(response).to have_http_status(400)
       end
       it "with float start_value will return 400 failure and error" do
-        start_value = nil
+        start_value = 2.123
         end_value = 250
         post "http://localhost:3000/" + @endpoint, params: { start_value: start_value, end_value: end_value, calculation_type: @calculation_type }
         expect(response).to have_http_status(400)
       end
       it "with float end_value will return 400 failure and error" do
-        start_value = nil
-        end_value = 250
+        start_value = 2
+        end_value = 50.123
         post "http://localhost:3000/" + @endpoint, params: { start_value: start_value, end_value: end_value, calculation_type: @calculation_type }
         expect(response).to have_http_status(400)
       end
