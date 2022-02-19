@@ -197,3 +197,311 @@ Migrating to CreateCalculations (20220219050435)
   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(313786698304490355)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/calculations/create" for ::1 at 2022-02-18 23:01:45 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/calculations/create"):
+  
+Started POST "/calculations/create" for ::1 at 2022-02-18 23:01:54 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/calculations/create"):
+  
+Started POST "/calculations/create" for ::1 at 2022-02-18 23:02:38 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/calculations/create"):
+  
+Started POST "/calculations/create" for ::1 at 2022-02-18 23:03:50 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/calculations/create"):
+  
+Started POST "/calculations/create" for ::1 at 2022-02-18 23:04:36 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/calculations/create"):
+  
+Started POST "/calculations/create" for ::1 at 2022-02-18 23:08:32 -0700
+  
+ActionController::RoutingError (No route matches [POST] "/calculations/create"):
+  
+Started POST "/calculations/create" for ::1 at 2022-02-18 23:09:00 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [POST] "/calculations/create"):
+  
+Started GET "/" for ::1 at 2022-02-18 23:13:05 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/zach/.rvm/gems/ruby-3.1.0/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/zach/.rvm/gems/ruby-3.1.0/gems/railties-7.0.2.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.6ms | Allocations: 481)
+Completed 200 OK in 16ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 3192)
+
+
+Started GET "/routes" for ::1 at 2022-02-18 23:13:15 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/routes"):
+  
+Started POST "/calculations/" for ::1 at 2022-02-18 23:14:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/zach/projects/math-wiz/app/controllers/calculations_controller.rb:26: syntax error, unexpected ',', expecting =>
+..., end_value:integer, :solution, :error)
+...                              ^
+):
+  
+app/controllers/calculations_controller.rb:26: syntax error, unexpected ',', expecting =>
+app/controllers/calculations_controller.rb:26: syntax error, unexpected ',', expecting =>
+app/controllers/calculations_controller.rb:26: syntax error, unexpected ',', expecting =>
+Started POST "/calculations/" for ::1 at 2022-02-18 23:16:08 -0700
+  
+SyntaxError (/Users/zach/projects/math-wiz/app/controllers/calculations_controller.rb:23: syntax error, unexpected ',', expecting =>
+..., end_value:integer, :solution, :error)
+...                              ^
+):
+  
+app/controllers/calculations_controller.rb:23: syntax error, unexpected ',', expecting =>
+app/controllers/calculations_controller.rb:23: syntax error, unexpected ',', expecting =>
+app/controllers/calculations_controller.rb:23: syntax error, unexpected ',', expecting =>
+Started POST "/calculations/" for ::1 at 2022-02-18 23:16:56 -0700
+  
+SyntaxError (/Users/zach/projects/math-wiz/app/controllers/calculations_controller.rb:23: syntax error, unexpected ')', expecting =>
+...teger, solution:string, :error)
+...                              ^
+):
+  
+app/controllers/calculations_controller.rb:23: syntax error, unexpected ')', expecting =>
+app/controllers/calculations_controller.rb:23: syntax error, unexpected ')', expecting =>
+app/controllers/calculations_controller.rb:23: syntax error, unexpected ')', expecting =>
+Started POST "/calculations/" for ::1 at 2022-02-18 23:17:24 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/zach/projects/math-wiz/app/controllers/calculations_controller.rb:23: syntax error, unexpected ')', expecting =>
+...teger, solution:string, :error)
+...                              ^
+):
+  
+app/controllers/calculations_controller.rb:23: syntax error, unexpected ')', expecting =>
+app/controllers/calculations_controller.rb:23: syntax error, unexpected ')', expecting =>
+app/controllers/calculations_controller.rb:23: syntax error, unexpected ')', expecting =>
+Started POST "/calculations/" for ::1 at 2022-02-18 23:18:24 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CalculationsController#create as JSON
+  Parameters: {"_json"=>[{"start_value"=>3328, "end_value"=>7789, "calculation_type"=>"generate_prime"}], "calculation"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 1.9ms | Allocations: 593)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: calculation_type
+Did you mean?  calculation):
+  
+app/controllers/calculations_controller.rb:23:in `calculation_params'
+app/controllers/calculations_controller.rb:8:in `create'
+Started POST "/calculations/" for ::1 at 2022-02-18 23:20:20 -0700
+Processing by CalculationsController#create as JSON
+  Parameters: {"calculation"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 484)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: calculation_type
+Did you mean?  calculation):
+  
+app/controllers/calculations_controller.rb:23:in `calculation_params'
+app/controllers/calculations_controller.rb:8:in `create'
+Started POST "/calculations/?start_value=4535&end_value=3668&calculation_type=generate_prime" for ::1 at 2022-02-18 23:22:04 -0700
+Processing by CalculationsController#create as JSON
+  Parameters: {"start_value"=>"4535", "end_value"=>"3668", "calculation_type"=>"generate_prime", "calculation"=>{}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2805)
+
+
+  
+NameError (undefined local variable or method `integer' for #<CalculationsController:0x00000000022740>
+
+      params.require(:calculation_type).permit(start_value:integer, end_value:integer, solution:string, error:string)
+                                                           ^^^^^^^
+Did you mean?  Integer):
+  
+app/controllers/calculations_controller.rb:23:in `calculation_params'
+app/controllers/calculations_controller.rb:8:in `create'
+Started POST "/calculations/?start_value=3484&end_value=1770&calculation_type=generate_prime" for ::1 at 2022-02-18 23:23:08 -0700
+Processing by CalculationsController#create as JSON
+  Parameters: {"start_value"=>"3484", "end_value"=>"1770", "calculation_type"=>"generate_prime", "calculation"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 1.6ms | Allocations: 1907)
+
+
+  
+NoMethodError (undefined method `permit' for "generate_prime":String
+
+      params.require(:calculation_type).permit(start_value:Integer, end_value:Integer, solution:String, error:String)
+                                       ^^^^^^^):
+  
+app/controllers/calculations_controller.rb:23:in `calculation_params'
+app/controllers/calculations_controller.rb:8:in `create'
+Started POST "/calculations/?start_value=8761&end_value=2230&calculation_type=generate_prime" for ::1 at 2022-02-18 23:24:01 -0700
+Processing by CalculationsController#create as JSON
+  Parameters: {"start_value"=>"8761", "end_value"=>"2230", "calculation_type"=>"generate_prime", "calculation"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 1.9ms | Allocations: 488)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: {:calculation_type=>String}
+Did you mean?  calculation_type):
+  
+app/controllers/calculations_controller.rb:23:in `calculation_params'
+app/controllers/calculations_controller.rb:8:in `create'
+Started POST "/calculations/?start_value=5794&end_value=7713&calculation_type=generate_prime" for ::1 at 2022-02-18 23:25:50 -0700
+Processing by CalculationsController#create as JSON
+  Parameters: {"start_value"=>"5794", "end_value"=>"7713", "calculation_type"=>"generate_prime", "calculation"=>{}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 1.5ms | Allocations: 1867)
+
+
+  
+NoMethodError (undefined method `permit' for "generate_prime":String
+
+      params.require(:calculation_type).permit(:start_value, :end_value, :solution, :error)
+                                       ^^^^^^^):
+  
+app/controllers/calculations_controller.rb:23:in `calculation_params'
+app/controllers/calculations_controller.rb:8:in `create'
+Started POST "/calculations/" for ::1 at 2022-02-18 23:30:28 -0700
+Error occurred while parsing request parameters.
+Contents:
+
+start_value=6434&end_value=3694&calculation_type=generate_prime
+Processing by CalculationsController#create as JSON
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 632)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/calculations_controller.rb:23:in `calculation_params'
+app/controllers/calculations_controller.rb:8:in `create'
+Started POST "/calculations/" for ::1 at 2022-02-18 23:31:15 -0700
+Error occurred while parsing request parameters.
+Contents:
+
+start_value=5324&end_value=8955&calculation_type=generate_prime
+Processing by CalculationsController#create as JSON
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 665)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/calculations_controller.rb:23:in `calculation_params'
+app/controllers/calculations_controller.rb:8:in `create'
+Started POST "/calculations/" for ::1 at 2022-02-18 23:35:25 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Error occurred while parsing request parameters.
+Contents:
+
+start_value=2866&end_value=806&calculation_type=generate_prime
+Processing by CalculationsController#create as JSON
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 716)
+
+
+  
+ActionDispatch::Http::Parameters::ParseError (Error occurred while parsing request parameters):
+  
+app/controllers/calculations_controller.rb:23:in `calculation_params'
+app/controllers/calculations_controller.rb:8:in `create'
+Started POST "/calculations/" for ::1 at 2022-02-18 23:36:27 -0700
+Processing by CalculationsController#create as JSON
+  Parameters: {"_json"=>[{"start_value"=>4411, "end_value"=>3965, "calculation_type"=>"generate_prime"}], "calculation"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 1.8ms | Allocations: 531)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: calculation_type
+Did you mean?  calculation):
+  
+app/controllers/calculations_controller.rb:23:in `calculation_params'
+app/controllers/calculations_controller.rb:8:in `create'
+Started POST "/calculations/" for ::1 at 2022-02-18 23:38:44 -0700
+Processing by CalculationsController#create as JSON
+  Parameters: {"_json"=>[{"start_value"=>2994, "end_value"=>4703, "calculation_type"=>"generate_prime"}], "calculation"=>{}}
+Completed 400 Bad Request in 0ms (ActiveRecord: 0.0ms | Allocations: 454)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: calculation_type
+Did you mean?  calculation):
+  
+app/controllers/calculations_controller.rb:23:in `calculation_params'
+app/controllers/calculations_controller.rb:8:in `create'
+Started POST "/calculations/" for ::1 at 2022-02-18 23:40:52 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CalculationsController#create as JSON
+  Parameters: {"_json"=>[{"start_value"=>4382, "end_value"=>1110, "calculation_type"=>"generate_prime"}], "calculation"=>{}}
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.8ms | Allocations: 2773)
+
+
+  
+NameError (undefined local variable or method `calculation_params' for #<CalculationsController:0x000000000225b0>
+
+    @calculation = Calculation.create(calculation_params)
+                                      ^^^^^^^^^^^^^^^^^^
+Did you mean?  calculation_path
+               calculation_url
+               calculations_path):
+  
+app/controllers/calculations_controller.rb:8:in `create'
+Started POST "/calculations/" for ::1 at 2022-02-18 23:42:05 -0700
+Processing by CalculationsController#create as JSON
+  Parameters: {"_json"=>[{"start_value"=>8659, "end_value"=>5024, "calculation_type"=>"generate_prime"}], "calculation"=>{}}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 5.0ms | Allocations: 4682)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/calculations_controller.rb:8:in `create'
+Started POST "/calculations/" for ::1 at 2022-02-18 23:44:01 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CalculationsController#create as JSON
+  Parameters: {"_json"=>[{"start_value"=>125, "end_value"=>2861, "calculation_type"=>"generate_prime"}], "calculation"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 2.8ms | Allocations: 593)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: calculation_type
+Did you mean?  calculation):
+  
+app/controllers/calculations_controller.rb:23:in `calculation_params'
+app/controllers/calculations_controller.rb:8:in `create'
+Started POST "/calculations/" for ::1 at 2022-02-18 23:46:15 -0700
+Processing by CalculationsController#create as JSON
+  Parameters: {"_json"=>[{"start_value"=>1316, "end_value"=>1111, "calculation_type"=>"generate_prime"}], "calculation"=>{}}
+Completed 500 Internal Server Error in 66794ms (ActiveRecord: 1.6ms | Allocations: 57857)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/calculations_controller.rb:10:in `create'
+Started POST "/calculations/" for ::1 at 2022-02-18 23:47:40 -0700
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CalculationsController#create as JSON
+  Parameters: {"_json"=>[{"start_value"=>3771, "end_value"=>264, "calculation_type"=>"generate_prime"}], "calculation"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 1.9ms | Allocations: 588)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: calculation_type
+Did you mean?  calculation):
+  
+app/controllers/calculations_controller.rb:25:in `calculation_params'
+app/controllers/calculations_controller.rb:9:in `create'
+Started POST "/calculations/" for ::1 at 2022-02-18 23:48:07 -0700
+Processing by CalculationsController#create as JSON
+  Parameters: {"_json"=>[{"start_value"=>3417, "end_value"=>1881, "calculation_type"=>"generate_prime"}], "calculation"=>{}}
+Completed 500 Internal Server Error in 405874ms (ActiveRecord: 5.1ms | Allocations: 77756)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/calculations_controller.rb:10:in `create'

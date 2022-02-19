@@ -1,5 +1,6 @@
-module CalculationsHelper
+require 'prime'
 
+module CalculationsHelper
   def generate_prime_numbers(start_value, end_value)
     solution = ""
     if start_value < end_value
@@ -14,13 +15,14 @@ module CalculationsHelper
     solution
   end
 
-    def check_prime_number(solution)
-      solution.strip(",").each do |value|
-        for value.is_prime?
-          true
-        else
-          false
-        end
+  def check_prime_number(solution)
+    solution.strip(",").each do |value|
+      if Prime.is_prime?(value)
+        true
+      else
+        false
+      end
     end
   end
+  ## TODO: helper method to strip solution at each "," and convert into array / ordered list
 end

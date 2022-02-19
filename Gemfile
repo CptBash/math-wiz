@@ -52,6 +52,7 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 gem "byebug"
 gem "rspec-rails"
+gem "httparty"
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]

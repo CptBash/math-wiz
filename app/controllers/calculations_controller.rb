@@ -1,12 +1,16 @@
-class CalculationsController < ActionController::API
+require 'byebug'
+class CalculationsController < ApplicationController
+
   def index
     @calculations = Calculation.all
   end
 
   def create
+    calculation_params.delete("controller")
+    calculation_params.delete("action")
     @calculation = Calculation.create(calculation_params)
     if @calculation[:calculation_type] == "generate_prime"
-      @calculation[:solution] = {answer: generate_prime_number(@calculation[:options])}
+      @calculation[:solution] = {answer: helpers.generate_prime_numbers(@calculation[:start_value], @calculation[:end_value])}
       @calculation[:is_prime] = check_prime_number(@calculation[:solution][:answer])
     else
       @calculation[:solution] = "unsupported calculation"
@@ -19,7 +23,9 @@ class CalculationsController < ActionController::API
 
   private
     def calculation_params
-      params.require(:calculation_type).permit(start_value:integer, end_value:integer, :solution, :error)
+      #TODO figure out why strong params is returning as a string
+      # params.require(:calculation_type).permit(:start_value, :end_value, :solution, :error)
+      params.permit!()
     end
 
 end
