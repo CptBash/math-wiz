@@ -4785,3 +4785,143 @@ Processing by CalculationsController#show as HTML
   [1m[36mCalculation Load (0.3ms)[0m  [1m[34mSELECT "calculations".* FROM "calculations" WHERE "calculations"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
 Completed 422 Unprocessable Entity in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 287)
   [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (41.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (8.0ms)[0m  [1m[35mBEGIN[0m
+Started POST "/calculations/" for 127.0.0.1 at 2022-02-22 21:08:39 -0700
+Processing by CalculationsController#create as HTML
+  Parameters: {"start_value"=>"4395", "end_value"=>"2533", "calculation_type"=>"generate_prime"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCalculation Create (0.9ms)[0m  [1m[32mINSERT INTO "calculations" ("calculation_type", "start_value", "end_value", "solution", "error", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["calculation_type", "generate_prime"], ["start_value", 4395], ["end_value", 2533], ["solution", nil], ["error", nil], ["created_at", "2022-02-23 04:08:39.945720"], ["updated_at", "2022-02-23 04:08:39.945720"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 38ms (Views: 1.1ms | ActiveRecord: 7.7ms | Allocations: 8540)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/calculations/" for 127.0.0.1 at 2022-02-22 21:08:39 -0700
+Processing by CalculationsController#create as HTML
+  Parameters: {"start_value"=>"1", "end_value"=>"2", "calculation_type"=>"generate_prime"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCalculation Create (0.4ms)[0m  [1m[32mINSERT INTO "calculations" ("calculation_type", "start_value", "end_value", "solution", "error", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["calculation_type", "generate_prime"], ["start_value", 1], ["end_value", 2], ["solution", nil], ["error", nil], ["created_at", "2022-02-23 04:08:39.983379"], ["updated_at", "2022-02-23 04:08:39.983379"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 842)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/calculations/" for 127.0.0.1 at 2022-02-22 21:08:39 -0700
+Processing by CalculationsController#create as HTML
+  Parameters: {"start_value"=>"0", "end_value"=>"1", "calculation_type"=>"generate_prime"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCalculation Create (0.4ms)[0m  [1m[32mINSERT INTO "calculations" ("calculation_type", "start_value", "end_value", "solution", "error", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["calculation_type", "generate_prime"], ["start_value", 0], ["end_value", 1], ["solution", nil], ["error", nil], ["created_at", "2022-02-23 04:08:39.993775"], ["updated_at", "2022-02-23 04:08:39.993775"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 847)
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/calculations/" for 127.0.0.1 at 2022-02-22 21:08:40 -0700
+Processing by CalculationsController#create as HTML
+  Parameters: {"start_value"=>"7900", "end_value"=>"7920", "calculation_type"=>"generate_prime"}
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCalculation Create (0.4ms)[0m  [1m[32mINSERT INTO "calculations" ("calculation_type", "start_value", "end_value", "solution", "error", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["calculation_type", "generate_prime"], ["start_value", 7900], ["end_value", 7920], ["solution", nil], ["error", nil], ["created_at", "2022-02-23 04:08:40.007774"], ["updated_at", "2022-02-23 04:08:40.007774"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 1.6ms | Allocations: 850)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/calculations/" for 127.0.0.1 at 2022-02-22 21:08:40 -0700
+Processing by CalculationsController#create as HTML
+  Parameters: {"start_value"=>"500", "end_value"=>"250", "calculation_type"=>"generate_prime"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCalculation Create (0.4ms)[0m  [1m[32mINSERT INTO "calculations" ("calculation_type", "start_value", "end_value", "solution", "error", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["calculation_type", "generate_prime"], ["start_value", 500], ["end_value", 250], ["solution", nil], ["error", nil], ["created_at", "2022-02-23 04:08:40.019664"], ["updated_at", "2022-02-23 04:08:40.019664"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 4ms (Views: 0.5ms | ActiveRecord: 0.8ms | Allocations: 937)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/calculations/" for 127.0.0.1 at 2022-02-22 21:08:40 -0700
+Processing by CalculationsController#create as HTML
+  Parameters: {"start_value"=>"0", "end_value"=>"0", "calculation_type"=>"foo-BAR"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCalculation Create (0.3ms)[0m  [1m[32mINSERT INTO "calculations" ("calculation_type", "start_value", "end_value", "solution", "error", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["calculation_type", "foo-BAR"], ["start_value", 0], ["end_value", 0], ["solution", nil], ["error", nil], ["created_at", "2022-02-23 04:08:40.029436"], ["updated_at", "2022-02-23 04:08:40.029436"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.6ms | Allocations: 773)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started POST "/calculations/" for 127.0.0.1 at 2022-02-22 21:08:40 -0700
+Processing by CalculationsController#create as HTML
+  Parameters: {"start_value"=>nil, "end_value"=>"250", "calculation_type"=>"generate_prime"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCalculation Create (0.4ms)[0m  [1m[32mINSERT INTO "calculations" ("calculation_type", "start_value", "end_value", "solution", "error", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["calculation_type", "generate_prime"], ["start_value", nil], ["end_value", 250], ["solution", nil], ["error", nil], ["created_at", "2022-02-23 04:08:40.036810"], ["updated_at", "2022-02-23 04:08:40.036810"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.7ms | Allocations: 773)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started POST "/calculations/" for 127.0.0.1 at 2022-02-22 21:08:40 -0700
+Processing by CalculationsController#create as HTML
+  Parameters: {"start_value"=>"250", "end_value"=>nil, "calculation_type"=>"generate_prime"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCalculation Create (0.3ms)[0m  [1m[32mINSERT INTO "calculations" ("calculation_type", "start_value", "end_value", "solution", "error", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["calculation_type", "generate_prime"], ["start_value", 250], ["end_value", nil], ["solution", nil], ["error", nil], ["created_at", "2022-02-23 04:08:40.045690"], ["updated_at", "2022-02-23 04:08:40.045690"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 771)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+Started POST "/calculations/" for 127.0.0.1 at 2022-02-22 21:08:40 -0700
+Processing by CalculationsController#create as HTML
+  Parameters: {"calculation_type"=>"generate_prime", "start_value"=>"3863", "end_value"=>"317"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCalculation Create (0.5ms)[0m  [1m[32mINSERT INTO "calculations" ("calculation_type", "start_value", "end_value", "solution", "error", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["calculation_type", "generate_prime"], ["start_value", 3863], ["end_value", 317], ["solution", nil], ["error", nil], ["created_at", "2022-02-23 04:08:40.054739"], ["updated_at", "2022-02-23 04:08:40.054739"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 11ms (Views: 0.7ms | ActiveRecord: 2.1ms | Allocations: 2261)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/calculations/" for 127.0.0.1 at 2022-02-22 21:08:40 -0700
+Processing by CalculationsController#index as HTML
+  [1m[36mCalculation Load (0.7ms)[0m  [1m[34mSELECT "calculations".* FROM "calculations"[0m
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.7ms | Allocations: 4956)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/calculations/281" for 127.0.0.1 at 2022-02-22 21:08:40 -0700
+Processing by CalculationsController#show as HTML
+  Parameters: {"id"=>"281"}
+  [1m[36mCalculation Load (0.4ms)[0m  [1m[34mSELECT "calculations".* FROM "calculations" WHERE "calculations"."id" = $1 LIMIT $2[0m  [["id", 281], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 2.5ms | ActiveRecord: 0.6ms | Allocations: 718)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/calculations/foo-BAR" for 127.0.0.1 at 2022-02-22 21:08:40 -0700
+Processing by CalculationsController#show as HTML
+  Parameters: {"id"=>"foo-BAR"}
+  [1m[36mCalculation Load (1.3ms)[0m  [1m[34mSELECT "calculations".* FROM "calculations" WHERE "calculations"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 3ms (Views: 0.4ms | ActiveRecord: 1.3ms | Allocations: 299)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+Started POST "/calculations/" for 127.0.0.1 at 2022-02-22 21:08:40 -0700
+Processing by CalculationsController#create as HTML
+  Parameters: {"calculation_type"=>"generate_prime", "start_value"=>"1607", "end_value"=>"7913"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCalculation Create (0.5ms)[0m  [1m[32mINSERT INTO "calculations" ("calculation_type", "start_value", "end_value", "solution", "error", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["calculation_type", "generate_prime"], ["start_value", 1607], ["end_value", 7913], ["solution", nil], ["error", nil], ["created_at", "2022-02-23 04:08:40.114517"], ["updated_at", "2022-02-23 04:08:40.114517"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Completed 200 OK in 11ms (Views: 0.8ms | ActiveRecord: 1.0ms | Allocations: 3370)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started DELETE "/calculations/282" for 127.0.0.1 at 2022-02-22 21:08:40 -0700
+Processing by CalculationsController#destroy as HTML
+  Parameters: {"id"=>"282"}
+  [1m[36mCalculation Load (0.4ms)[0m  [1m[34mSELECT "calculations".* FROM "calculations" WHERE "calculations"."id" = $1 LIMIT $2[0m  [["id", 282], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCalculation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "calculations" WHERE "calculations"."id" = $1[0m  [["id", 282]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+No template found for CalculationsController#destroy, rendering head :no_content
+Completed 204 No Content in 6ms (ActiveRecord: 1.0ms | Allocations: 1139)
+Started GET "/calculations/282" for 127.0.0.1 at 2022-02-22 21:08:40 -0700
+Processing by CalculationsController#show as HTML
+  Parameters: {"id"=>"282"}
+  [1m[36mCalculation Load (0.4ms)[0m  [1m[34mSELECT "calculations".* FROM "calculations" WHERE "calculations"."id" = $1 LIMIT $2[0m  [["id", 282], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 1ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 294)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/calculations/foo-BAR" for 127.0.0.1 at 2022-02-22 21:08:40 -0700
+Processing by CalculationsController#show as HTML
+  Parameters: {"id"=>"foo-BAR"}
+  [1m[36mCalculation Load (0.3ms)[0m  [1m[34mSELECT "calculations".* FROM "calculations" WHERE "calculations"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 1ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 287)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/health_check/index" for 127.0.0.1 at 2022-02-22 21:08:40 -0700
+Processing by HealthCheckController#index as HTML
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 165)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mROLLBACK[0m
