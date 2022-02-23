@@ -4,7 +4,7 @@ class CreateCalculations < ActiveRecord::Migration[7.0]
       t.string :calculation_type
       t.integer :start_value
       t.integer :end_value
-      t.string :solution
+      t.text :solution
       t.string :error
 
       t.timestamps

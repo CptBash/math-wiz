@@ -18,7 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_02_19_050435) do
     t.string "calculation_type"
     t.integer "start_value"
     t.integer "end_value"
-    t.string "solution"
+    t.text "solution"
     t.string "error"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

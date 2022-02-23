@@ -53,6 +53,8 @@ gem "bootsnap", require: false
 gem "byebug"
 gem "rspec-rails"
 gem "httparty"
+gem 'prime'
+gem 'json_spec'
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
